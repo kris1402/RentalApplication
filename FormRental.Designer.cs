@@ -368,6 +368,7 @@
             this.Controls.Add(this.button3);
             this.Name = "FormRental";
             this.Text = "FormRental";
+            this.Load += new System.EventHandler(this.FormRental_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
