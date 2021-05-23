@@ -149,9 +149,11 @@ namespace Project_SQL
 
             if (Mode == true)
             {
-                sql = "insert into itemRegistration(regNumber, TypeOfEquimpent,SkiStyle, Available, SkiLenght,SkiModel) values(@regNumber,@TypeOfEquimpent, @SkiStyle, @Available, @SkiLenght, @SkiModel)";
+                //sql = "insert into itemRegistration(regNumber, TypeOfEquimpent,SkiStyle, Available, SkiLenght,SkiModel) values(@regNumber,@TypeOfEquimpent, @SkiStyle, @Available, @SkiLenght, @SkiModel)";
+                sql = "sp_I_item";
                 con.Open();
                 cmd_1 = new SqlCommand(sql, con);
+                cmd_1.CommandType = CommandType.StoredProcedure;
                 cmd_1.Parameters.AddWithValue("@regNumber", regNumber);
                 cmd_1.Parameters.AddWithValue("@TypeOfEquimpent", typeEqu);
                 cmd_1.Parameters.AddWithValue("@SkiStyle", comStyle);
@@ -160,7 +162,6 @@ namespace Project_SQL
                 cmd_1.Parameters.AddWithValue("@SkiModel", skiMod);
                 cmd_1.ExecuteNonQuery();
                 MessageBox.Show("Record Added");
-
             }
             else
             {
