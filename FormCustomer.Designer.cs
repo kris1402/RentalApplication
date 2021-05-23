@@ -32,11 +32,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.refreshBtn = new System.Windows.Forms.Button();
             this.mobile = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtArea = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.txtTittle = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.textStreet = new System.Windows.Forms.TextBox();
@@ -45,9 +46,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.refreshBtn = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.comboBoxTittle = new System.Windows.Forms.ComboBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +59,7 @@
             this.edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,13 +97,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxTittle);
             this.groupBox1.Controls.Add(this.refreshBtn);
             this.groupBox1.Controls.Add(this.mobile);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtArea);
             this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Controls.Add(this.txtTittle);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.txtSurname);
             this.groupBox1.Controls.Add(this.textStreet);
@@ -124,12 +124,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer";
             // 
+            // refreshBtn
+            // 
+            this.refreshBtn.Location = new System.Drawing.Point(204, 355);
+            this.refreshBtn.Name = "refreshBtn";
+            this.refreshBtn.Size = new System.Drawing.Size(120, 40);
+            this.refreshBtn.TabIndex = 12;
+            this.refreshBtn.Text = "Refresh";
+            this.refreshBtn.UseVisualStyleBackColor = true;
+            // 
             // mobile
             // 
             this.mobile.Location = new System.Drawing.Point(204, 310);
             this.mobile.Name = "mobile";
             this.mobile.Size = new System.Drawing.Size(131, 23);
             this.mobile.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(38, 355);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 40);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label8
             // 
@@ -155,13 +174,6 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(131, 23);
             this.txtID.TabIndex = 9;
-            // 
-            // txtTittle
-            // 
-            this.txtTittle.Location = new System.Drawing.Point(204, 70);
-            this.txtTittle.Name = "txtTittle";
-            this.txtTittle.Size = new System.Drawing.Size(131, 23);
-            this.txtTittle.TabIndex = 4;
             // 
             // txtName
             // 
@@ -235,21 +247,11 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Tittle";
             // 
-            // button1
+            // dataGridView2
             // 
-            this.button1.Location = new System.Drawing.Point(38, 355);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 40);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -260,19 +262,21 @@
             this.Column8,
             this.edit,
             this.delete});
-            this.dataGridView1.Location = new System.Drawing.Point(26, 466);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(446, 159);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGridView2.Location = new System.Drawing.Point(421, 117);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(718, 208);
+            this.dataGridView2.TabIndex = 5;
             // 
-            // refreshBtn
+            // comboBoxTittle
             // 
-            this.refreshBtn.Location = new System.Drawing.Point(204, 355);
-            this.refreshBtn.Name = "refreshBtn";
-            this.refreshBtn.Size = new System.Drawing.Size(120, 40);
-            this.refreshBtn.TabIndex = 12;
-            this.refreshBtn.Text = "Refresh";
-            this.refreshBtn.UseVisualStyleBackColor = true;
+            this.comboBoxTittle.FormattingEnabled = true;
+            this.comboBoxTittle.Items.AddRange(new object[] {
+            "Mr",
+            "Mrs"});
+            this.comboBoxTittle.Location = new System.Drawing.Point(204, 70);
+            this.comboBoxTittle.Name = "comboBoxTittle";
+            this.comboBoxTittle.Size = new System.Drawing.Size(131, 24);
+            this.comboBoxTittle.TabIndex = 13;
             // 
             // Column1
             // 
@@ -318,21 +322,22 @@
             // 
             this.edit.HeaderText = "Edit";
             this.edit.Name = "edit";
-            this.edit.Text = "";
+            this.edit.Text = "Edit";
             this.edit.UseColumnTextForButtonValue = true;
             // 
             // delete
             // 
             this.delete.HeaderText = "Delete";
             this.delete.Name = "delete";
+            this.delete.Text = "Delete";
             this.delete.UseColumnTextForButtonValue = true;
             // 
             // FormCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 646);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1151, 465);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -340,7 +345,7 @@
             this.Text = "FormCustomer";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -358,7 +363,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtTittle;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.TextBox textStreet;
@@ -366,7 +370,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button refreshBtn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.ComboBox comboBoxTittle;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
