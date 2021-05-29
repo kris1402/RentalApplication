@@ -236,6 +236,11 @@ namespace Project_SQL
             string invNum = invNum1.Text;
             string avl = labelStatus.Text;
 
+
+
+
+
+
             sql = "insert into ReNTalItems(Item_ID, Customer_ID, CustomerName, DailyRate, Discount, PaymentMethod, RentalDate,DueDate, NumberOfDays, TotalToPay,InvoiceNumber) " +
                 "values(@Item_ID, @Customer_ID, @CustomerName, @DailyRate, @Discount, @PaymentMethod, @RentalDate,@DueDate, @NumberOfDays, @TotalToPay,@InvoiceNumber)";
             con.Open();
@@ -306,5 +311,15 @@ namespace Project_SQL
             con.Close();*/
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DateTime startTime = dateRental.Value;
+            DateTime endTime = dateToDate.Value;
+
+            TimeSpan duration = new TimeSpan(endTime.Ticks - startTime.Ticks);
+            
+            number_of_DaysTextBox.Text = duration.ToString(@"dd");
+ 
+        }
     }
 }
