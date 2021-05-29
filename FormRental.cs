@@ -318,7 +318,7 @@ namespace Project_SQL
 
             TimeSpan duration = new TimeSpan(endTime.Ticks - startTime.Ticks);
             
-            number_of_DaysTextBox.Text = duration.ToString(@"dd");/*comment*/
+            number_of_DaysTextBox.Text = duration.ToString(@"dd");/*comment second attemnt*/
  
         }
     }
