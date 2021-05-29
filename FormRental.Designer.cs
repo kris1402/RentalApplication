@@ -34,43 +34,45 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.labelStatus = new System.Windows.Forms.Label();
-            this.dateToDate = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dateRental = new System.Windows.Forms.DateTimePicker();
-            this.total_CostTextBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.number_of_DaysTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.dateToDate = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dateRental = new System.Windows.Forms.DateTimePicker();
             this.txtCustomerID = new System.Windows.Forms.TextBox();
             this.discountTextBox = new System.Windows.Forms.TextBox();
             this.dailyRateTextBox = new System.Windows.Forms.TextBox();
             this.cutomerName = new System.Windows.Forms.TextBox();
             this.comboBoxItemID = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.total_CostTextBox = new System.Windows.Forms.TextBox();
+            this.labelStatus = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.invNum1 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.invNum1 = new System.Windows.Forms.Label();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -152,62 +154,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rental";
             // 
-            // labelStatus
-            // 
-            this.labelStatus.AutoSize = true;
-            this.labelStatus.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelStatus.ForeColor = System.Drawing.Color.DarkRed;
-            this.labelStatus.Location = new System.Drawing.Point(6, 72);
-            this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(66, 24);
-            this.labelStatus.TabIndex = 18;
-            this.labelStatus.Text = "Status";
-            // 
-            // dateToDate
-            // 
-            this.dateToDate.Location = new System.Drawing.Point(120, 252);
-            this.dateToDate.Name = "dateToDate";
-            this.dateToDate.Size = new System.Drawing.Size(200, 23);
-            this.dateToDate.TabIndex = 17;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(233, 38);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 25);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Total";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // dateRental
-            // 
-            this.dateRental.Location = new System.Drawing.Point(120, 217);
-            this.dateRental.Name = "dateRental";
-            this.dateRental.Size = new System.Drawing.Size(200, 23);
-            this.dateRental.TabIndex = 17;
-            // 
-            // total_CostTextBox
-            // 
-            this.total_CostTextBox.Location = new System.Drawing.Point(112, 39);
-            this.total_CostTextBox.Name = "total_CostTextBox";
-            this.total_CostTextBox.Size = new System.Drawing.Size(116, 23);
-            this.total_CostTextBox.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(4, 27);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 31);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Avability";
-            // 
             // number_of_DaysTextBox
             // 
             this.number_of_DaysTextBox.Location = new System.Drawing.Point(168, 293);
@@ -225,25 +171,34 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Number of days";
             // 
-            // button1
+            // dateToDate
             // 
-            this.button1.Location = new System.Drawing.Point(145, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 32);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.dateToDate.Location = new System.Drawing.Point(120, 252);
+            this.dateToDate.Name = "dateToDate";
+            this.dateToDate.Size = new System.Drawing.Size(200, 23);
+            this.dateToDate.TabIndex = 17;
             // 
-            // button2
+            // comboBox1
             // 
-            this.button2.Location = new System.Drawing.Point(45, 119);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 32);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "OK";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Cash",
+            "Credit Card ",
+            "Sepa"});
+            this.comboBox1.Location = new System.Drawing.Point(168, 180);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(17, 220);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 17);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Rental Date";
             // 
             // label8
             // 
@@ -255,15 +210,21 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "Due Date";
             // 
-            // label7
+            // label10
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(17, 220);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 17);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Rental Date";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(18, 184);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(114, 17);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Payment Method";
+            // 
+            // dateRental
+            // 
+            this.dateRental.Location = new System.Drawing.Point(120, 217);
+            this.dateRental.Name = "dateRental";
+            this.dateRental.Size = new System.Drawing.Size(200, 23);
+            this.dateRental.TabIndex = 17;
             // 
             // txtCustomerID
             // 
@@ -309,6 +270,91 @@
             this.comboBoxItemID.TabIndex = 5;
             this.comboBoxItemID.SelectedIndexChanged += new System.EventHandler(this.comboBoxItemID_SelectedIndexChanged);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.total_CostTextBox);
+            this.groupBox3.Location = new System.Drawing.Point(6, 322);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(324, 95);
+            this.groupBox3.TabIndex = 20;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Summation";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.ForeColor = System.Drawing.Color.Maroon;
+            this.label12.Location = new System.Drawing.Point(10, 42);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(96, 16);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "Total to Pay:";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.Location = new System.Drawing.Point(233, 38);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(85, 25);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Total";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // total_CostTextBox
+            // 
+            this.total_CostTextBox.Location = new System.Drawing.Point(112, 39);
+            this.total_CostTextBox.Name = "total_CostTextBox";
+            this.total_CostTextBox.Size = new System.Drawing.Size(116, 23);
+            this.total_CostTextBox.TabIndex = 15;
+            // 
+            // labelStatus
+            // 
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelStatus.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelStatus.Location = new System.Drawing.Point(6, 72);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(66, 24);
+            this.labelStatus.TabIndex = 18;
+            this.labelStatus.Text = "Status";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(4, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 31);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Avability";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(145, 119);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 32);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(45, 119);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(86, 32);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "OK";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -319,62 +365,13 @@
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column6});
+            this.Column6,
+            this.Column7,
+            this.Column8});
             this.dataGridView1.Location = new System.Drawing.Point(354, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(481, 260);
             this.dataGridView1.TabIndex = 17;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Ski ID";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Customer ID";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Customer Name";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Rental Fee";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Register Date";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Due DAte";
-            this.Column6.Name = "Column6";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(18, 184);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 17);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Payment Method";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Cash",
-            "Credit Card ",
-            "Sepa"});
-            this.comboBox1.Location = new System.Drawing.Point(168, 180);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 19;
             // 
             // label11
             // 
@@ -405,38 +402,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Order";
             // 
-            // groupBox3
+            // invNum1
             // 
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.total_CostTextBox);
-            this.groupBox3.Location = new System.Drawing.Point(6, 322);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(324, 95);
-            this.groupBox3.TabIndex = 20;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Summation";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.ForeColor = System.Drawing.Color.Maroon;
-            this.label12.Location = new System.Drawing.Point(10, 42);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 16);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "Total to Pay:";
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(243, 121);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 30);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Print";
-            this.button4.UseVisualStyleBackColor = true;
+            this.invNum1.AutoSize = true;
+            this.invNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.invNum1.ForeColor = System.Drawing.Color.DarkRed;
+            this.invNum1.Location = new System.Drawing.Point(130, 72);
+            this.invNum1.Name = "invNum1";
+            this.invNum1.Size = new System.Drawing.Size(44, 24);
+            this.invNum1.TabIndex = 22;
+            this.invNum1.Text = "INV";
             // 
             // label13
             // 
@@ -450,16 +425,55 @@
             this.label13.TabIndex = 20;
             this.label13.Text = "Invoice Printout";
             // 
-            // invNum1
+            // button4
             // 
-            this.invNum1.AutoSize = true;
-            this.invNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.invNum1.ForeColor = System.Drawing.Color.DarkRed;
-            this.invNum1.Location = new System.Drawing.Point(130, 72);
-            this.invNum1.Name = "invNum1";
-            this.invNum1.Size = new System.Drawing.Size(44, 24);
-            this.invNum1.TabIndex = 22;
-            this.invNum1.Text = "INV";
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.Location = new System.Drawing.Point(243, 121);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(115, 30);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Print";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Ski ID";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Customer ID";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Customer Name";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Rental Fee";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Register Date";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Due Date";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "TotalToPay";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Invoice";
+            this.Column8.Name = "Column8";
             // 
             // FormRental
             // 
@@ -473,11 +487,11 @@
             this.Text = "FormRental";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -506,12 +520,6 @@
         private System.Windows.Forms.DateTimePicker dateToDate;
         private System.Windows.Forms.DateTimePicker dateRental;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -523,5 +531,13 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label invNum1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }
