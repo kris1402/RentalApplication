@@ -17,7 +17,8 @@ namespace Project_SQL
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Formula());
-            Application.Run(new Form_Reg());
+            //Application.Run(new Form_Reg());
+            Application.Run(new FormRental());
         }
     }
 }

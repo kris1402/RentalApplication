@@ -158,7 +158,7 @@ namespace Project_SQL
                 cmd_1.Parameters.AddWithValue("@TypeOfEquimpent", typeEqu);
                 cmd_1.Parameters.AddWithValue("@SkiStyle", comStyle);
                 cmd_1.Parameters.AddWithValue("@Available", available);
-                cmd_1.Parameters.AddWithValue("@SkiLenght", skiLen);
+                cmd_1.Parameters.AddWithValue("@SkiLenght", skiLen); 
                 cmd_1.Parameters.AddWithValue("@SkiModel", skiMod);
                 cmd_1.ExecuteNonQuery();
                 MessageBox.Show("Record Added");
@@ -168,6 +168,13 @@ namespace Project_SQL
                 MessageBox.Show("Record not added!");
             }
             con.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+                Main m = new Main();
+                this.Hide();
+                m.Show();
         }
     }
 }

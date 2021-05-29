@@ -130,11 +130,11 @@ namespace Project_SQL
             con.Close();
         }
 
-
-
-
-
-
-
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+                Main m = new Main();
+                this.Hide();
+                m.Show();
+        }
     }
 }

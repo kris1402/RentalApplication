@@ -86,6 +86,30 @@ namespace Project_SQL
                     //MessageBox.Show("Wyn; " + totalR);
                 }
             }
+
+            //Adding Invoice Number
+
+            //----------------//
+            cmd = new SqlCommand("Select * from itemRegistration where regNumber = '" + comboBoxItemID.Text + "'   ", con);
+            con.Open();
+            dr = cmd.ExecuteReader();
+
+            if (dr.Read())
+            {
+                /*Validation if No nothing can be done*/
+                string aval;
+                aval = ("INV/" + DateTime.Now.Year.ToString() +"/" + DateTime.Now.Month.ToString() + "/" + dr["regNumber"].ToString());
+                invNum1.Text = aval;
+
+            }
+            else
+            {
+                invNum1.Text = "NOT Available";
+            }
+            con.Close();
+            //----------------//
+
+
         }
 
         private void comboBoxItemID_SelectedIndexChanged(object sender, EventArgs e)
@@ -137,5 +161,49 @@ namespace Project_SQL
                 con.Close();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+                Main m = new Main();
+                this.Hide();
+                m.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string itemId = comboBoxItemID.SelectedItem.ToString();
+            string txtCustomerId = txtCustomerID.Text;
+
+
+            /*string regNumber = txtID.Text;
+            string typeEqu = comboBoxType.SelectedItem.ToString();
+            //string model = txtmodel.Text;
+            string comStyle = comboBoxStyle.SelectedItem.ToString();
+            string available = comboBoxAvl.SelectedItem.ToString();
+            string skiLen = txtSkiLen.Text;
+            string skiMod = txtModel.Text;*/
+
+            /*if (Mode == true)
+            {
+                //sql = "insert into itemRegistration(regNumber, TypeOfEquimpent,SkiStyle, Available, SkiLenght,SkiModel) values(@regNumber,@TypeOfEquimpent, @SkiStyle, @Available, @SkiLenght, @SkiModel)";
+                sql = "sp_I_item";
+                con.Open();
+                cmd_1 = new SqlCommand(sql, con);
+                cmd_1.CommandType = CommandType.StoredProcedure;
+                cmd_1.Parameters.AddWithValue("@TypeOfEquimpent", typeEqu);
+                cmd_1.Parameters.AddWithValue("@SkiStyle", comStyle);
+                cmd_1.Parameters.AddWithValue("@Available", available);
+                cmd_1.Parameters.AddWithValue("@SkiLenght", skiLen);
+                cmd_1.Parameters.AddWithValue("@SkiModel", skiMod);
+                cmd_1.ExecuteNonQuery();
+                MessageBox.Show("Record Added");
+            }
+            else
+            {
+                MessageBox.Show("Record not added!");
+            }
+            con.Close();*/
+        }
+
     }
 }
