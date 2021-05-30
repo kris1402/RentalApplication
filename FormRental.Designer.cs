@@ -67,10 +67,10 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.invNum1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -304,7 +304,7 @@
             this.label12.ForeColor = System.Drawing.Color.Maroon;
             this.label12.Location = new System.Drawing.Point(10, 42);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 16);
+            this.label12.Size = new System.Drawing.Size(100, 16);
             this.label12.TabIndex = 17;
             this.label12.Text = "Total to Pay:";
             // 
@@ -458,6 +458,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Order";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Project_SQL.Properties.Resources._15676564511579330993_128;
+            this.pictureBox1.Location = new System.Drawing.Point(312, 64);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(51, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // invNum1
             // 
             this.invNum1.AutoSize = true;
@@ -490,16 +500,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "Print";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Project_SQL.Properties.Resources._15676564511579330993_128;
-            this.pictureBox1.Location = new System.Drawing.Point(312, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 51);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FormRental
             // 

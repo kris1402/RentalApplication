@@ -321,5 +321,13 @@ namespace Project_SQL
             number_of_DaysTextBox.Text = duration.ToString(@"dd");/*comment second attemnt*/
  
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            /*Report.printingInvoiceForm m = new Report.printingInvoiceForm();
+            this.Hide();
+            m.Show();*/
+            new Report.printingInvoiceForm().Show();
+        }
     }
 }
