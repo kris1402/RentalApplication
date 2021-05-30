@@ -33,6 +33,7 @@
             this.rental = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // itemReg
@@ -60,27 +61,29 @@
             // rental
             // 
             this.rental.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rental.Location = new System.Drawing.Point(114, 255);
+            this.rental.Location = new System.Drawing.Point(67, 296);
             this.rental.Name = "rental";
             this.rental.Size = new System.Drawing.Size(160, 60);
             this.rental.TabIndex = 2;
-            this.rental.Text = "Rental";
+            this.rental.Text = "RentalOLD";
             this.rental.UseVisualStyleBackColor = true;
             this.rental.Click += new System.EventHandler(this.rental_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(114, 340);
+            this.button4.Location = new System.Drawing.Point(67, 211);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(160, 60);
             this.button4.TabIndex = 3;
-            this.button4.Text = "LogOut";
+            this.button4.Text = "Rental";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.rental);
             this.groupBox1.Location = new System.Drawing.Point(47, 47);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(295, 394);
@@ -93,13 +96,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 500);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.rental);
             this.Controls.Add(this.cust);
             this.Controls.Add(this.itemReg);
             this.Controls.Add(this.groupBox1);
             this.Name = "Main";
             this.Text = "Main";
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
