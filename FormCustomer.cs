@@ -105,9 +105,11 @@ namespace Project_SQL
 
             if (Mode == true)
             {
-                sql = "insert into Customers(ID, Tittle, Name, Surname,Street,PostCode,Area,Mobile) values(@ID, @Tittle, @Name, @Surname,@Street,@PostCode,@Area,@Mobile)";
+                //sql = "insert into Customers(ID, Tittle, Name, Surname,Street,PostCode,Area,Mobile) values(@ID, @Tittle, @Name, @Surname,@Street,@PostCode,@Area,@Mobile)";
+                sql = "sp_I_customers";
                 con.Open();
                 cmd = new SqlCommand(sql, con);
+                cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ID", regCust);
                 cmd.Parameters.AddWithValue("@Tittle", tittleCust);
                 cmd.Parameters.AddWithValue("@Name", nameCust);
