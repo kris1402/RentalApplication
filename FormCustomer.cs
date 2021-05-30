@@ -17,7 +17,7 @@ namespace Project_SQL
         {
             InitializeComponent();
             Autono();
-            //load();
+            load();
         }
         /*Connection*/
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-3N6GONB\\SQLEXPRESS;Initial Catalog=Connection;Integrated Security=True");
@@ -27,6 +27,11 @@ namespace Project_SQL
         string proid;
         SqlCommand cmd;
         SqlDataReader dr;
+        /*----------------*/
+        SqlCommand cmd_1;
+        SqlDataReader dr_1;
+        string proid_1;
+        bool Mode = true;
 
 
 
@@ -42,7 +47,7 @@ namespace Project_SQL
             {
                 int id = int.Parse(dr[0].ToString()) + 1;
 
-                proid = id.ToString("00000");
+                proid = id.ToString("0");
 
                 MessageBox.Show("Pierwszy if id = " + proid);
 
@@ -50,13 +55,13 @@ namespace Project_SQL
             }
             else if (Convert.IsDBNull(dr))
             {
-                proid = ("00000");
+                proid = ("0");
                 MessageBox.Show("Else if = " + proid);
 
             }
             else
             {
-                proid = ("00000");
+                proid = ("0");
                 MessageBox.Show("Else = " + proid);
 
             }
@@ -68,20 +73,66 @@ namespace Project_SQL
 
         }
 
+        public void load()
+        {
+            sql = "select * from Customers";
+            cmd = new SqlCommand(sql, con);
+            con.Open();
+            dr = cmd.ExecuteReader();
+            dataGridView2.Rows.Clear();
 
+            while (dr.Read())
+            {
+                dataGridView2.Rows.Add(dr[0], dr[1], dr[2], dr[3], dr[4],dr[5],dr[6],dr[7]);
+            }
+            con.Close();
+
+        }
 
 
         private void button1_Click(object sender, EventArgs e)
+
         {
-            con.Open();
-            if (con.State == System.Data.ConnectionState.Open)
+            string regCust = txtID.Text;
+            string tittleCust = comboBoxTittle.SelectedItem.ToString();
+            string nameCust = txtName.Text;
+            string surnameCust = txtSurname.Text;
+            string streetCust = textStreet.Text;
+            string postCode = textPostCode.Text;
+            string area = txtArea.Text;
+            int mobileCust = int.Parse(mobile.Text);
+
+
+            if (Mode == true)
             {
-                string q = "insert into Customers(ID,Tittle,Name,Surname,Street,PostCode,Area,Mobile) values('" + txtID.Text.ToString() + "','" + txtTittle.Text.ToString() + "','" + txtName.Text.ToString() + "','" + txtSurname.Text.ToString() + "','" + textStreet.Text.ToString() + "','" + textPostCode.Text.ToString() + "','" + txtArea.Text.ToString() + "', '" + int.Parse(mobile.Text) + "')";
-                SqlCommand cmd = new SqlCommand(q, con);
+                sql = "insert into Customers(ID, Tittle, Name, Surname,Street,PostCode,Area,Mobile) values(@ID, @Tittle, @Name, @Surname,@Street,@PostCode,@Area,@Mobile)";
+                con.Open();
+                cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@ID", regCust);
+                cmd.Parameters.AddWithValue("@Tittle", tittleCust);
+                cmd.Parameters.AddWithValue("@Name", nameCust);
+                cmd.Parameters.AddWithValue("@Surname", surnameCust);
+                cmd.Parameters.AddWithValue("@Street", streetCust);
+
+                cmd.Parameters.AddWithValue("@PostCode", postCode);
+                cmd.Parameters.AddWithValue("@Area", area);
+                cmd.Parameters.AddWithValue("@Mobile", mobileCust);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Connected Successfuly! ");
+                MessageBox.Show("Customer Added");
+
+            }
+            else
+            {
+                MessageBox.Show("Record not added!");
             }
             con.Close();
         }
+
+
+
+
+
+
+
     }
 }
