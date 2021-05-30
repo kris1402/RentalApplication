@@ -128,7 +128,7 @@ namespace Project_SQL
 
             while (dr_1.Read())
             {
-                //dataGridView1.Rows.Add(dr_1[0], dr_1[1], dr_1[2], dr_1[3]);
+                dataGridView1.Rows.Add(dr_1[0], dr_1[1], dr_1[2], dr_1[3], dr_1[4], dr_1[5], dr_1[6]);
             }
             con.Close();
 

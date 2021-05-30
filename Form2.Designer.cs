@@ -73,7 +73,7 @@
             this.rental.Name = "rental";
             this.rental.Size = new System.Drawing.Size(160, 60);
             this.rental.TabIndex = 2;
-            this.rental.Text = "RentalOLD";
+            this.rental.Text = "Return";
             this.rental.UseVisualStyleBackColor = true;
             this.rental.Click += new System.EventHandler(this.rental_Click);
             // 
