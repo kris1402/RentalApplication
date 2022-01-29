@@ -1,13 +1,13 @@
 # Application to manage winter sports equipment rental
 ***
 ## Structure of the Database
-![This is an image](Diagrams\RelationalDatabaseModel.png)
+![This is an image](Diagrams/RelationalDatabaseModel.png)
 ## Forms
-![This is an image](Diagrams\Forms_1.png)
-![This is an image](Diagrams\Forms_2.png)
-![This is an image](Diagrams\Forms_3.png)
-![This is an image](Diagrams\Forms_4.png)
-![This is an image](Diagrams\Forms_5.png)
+![This is an image](Diagrams/Forms_1.png)
+![This is an image](Diagrams/Forms_2.png)
+![This is an image](Diagrams/Forms_3.png)
+![This is an image](Diagrams/Forms_4.png)
+![This is an image](Diagrams/Forms_5.png)
 ***
 
 ## Results 
